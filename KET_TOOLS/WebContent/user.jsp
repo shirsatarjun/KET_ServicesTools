@@ -37,7 +37,7 @@
     </table></td>
     <td><p>Report a tickets:</p>
       <ul>
-        <li>Select Product Environment and Type .</li>
+        <li>Select Product.</li>
         
       </ul></td>
   </tr>

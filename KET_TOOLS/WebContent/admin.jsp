@@ -20,7 +20,7 @@
 	<p>&nbsp;</p>
 	<table width=300>
       <tr>
-        <td bgcolor="#F2F2F2" height="25" align="center"><a href="bugsadmin.jsp">View Bugs</a></td>
+        <td bgcolor="#F2F2F2" height="25" align="center"><a href="bugsadmin.jsp">View Tickets</a></td>
       </tr>
       <tr>
       <td bgcolor="#F2F2F2" height="25" align="center"><a href="configexp.jsp">Configure Experts</a></td>
@@ -38,7 +38,7 @@
     <td><p>As an Administrator </p>
       <ul>
         <li> KET Admin csn View all reported tickets ,And  assign tickets to different aur KET Technical Experts to fix it. </li>
-        <li>Configure Differnt aur ket developer or aur testing teams </li>
+     
       </ul></td>
   </tr>
   <tr>

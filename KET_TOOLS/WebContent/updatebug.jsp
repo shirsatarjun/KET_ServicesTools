@@ -14,9 +14,12 @@
 <jsp:include page="menu.jsp"/>
 </td></tr>
 <tr><td height="300" valign="top"><div align="center">
-You can update tickets issue and ket expert team is resposible to ticket sovle problem.</div>
+</div>
 <form name="form" method="post" action="updatebug1.jsp">
 <input type="hidden" name="bugid" value="<%=(String)request.getParameter("bugid")%>" />
+
+
+
 <table align="center" cellpadding="2" width="500" cellspacing="4">
 <tr bgcolor="#0054A8" class="whitetext" align="center">
 <td colspan="4">tikets Detail</td></tr>
@@ -28,7 +31,7 @@ try{
 	String query = "select * from bug where bugid="+(String)request.getParameter("bugid");
 	ResultSet rs = stmt.executeQuery(query);
 	while(rs.next()){
-	out.print("<tr><td bgcolor=#F2F2F2>Bug ID</td><td>"+rs.getString("bugid")+"</td><td bgcolor=#F2F2F2>Author</td><td>"+rs.getString("author")+"</td></tr>");
+	out.print("<tr><td bgcolor=#F2F2F2>Tickets  ID</td><td>"+rs.getString("bugid")+"</td><td bgcolor=#F2F2F2>Author</td><td>"+rs.getString("author")+"</td></tr>");
 	out.print("<tr><td bgcolor=#F2F2F2>Product Name</td><td colspan=3>"+rs.getString("prodname")+"</td></tr>");
 	out.print("<tr><td bgcolor=#F2F2F2>Environment</td><td>"+rs.getString("env")+"</td><td bgcolor=#F2F2F2>Type</td><td>"+rs.getString("type")+"</td></tr>");
 	out.print("<tr><td colspan=4 bgcolor=#F2F2F2>Description</td></tr>");	
@@ -68,14 +71,18 @@ try{
 	con.close();
 }catch(Exception e){
 	System.out.print(e);
-}  
+} 
+
 %>
-<!-- <td colspan="4" align="center"><input type="submit" name="update" value="Update"</td> --></tr>
-</table>
-</form>
+<p><input type="submit" name="update" value="Update"></input></p> 
+
+
 <table align="center" cellpadding="2" width="500" cellspacing="4">
+
 <tr><td colspan="2" bgcolor="#0054A8" class="whitetext">Audit Trail</td></tr>
 <tr bgcolor=#F2F2F2><td class="smalltext" width="150">Expert</td><td class="smalltext">Comments</td></tr>
+</table>
+</form>
 <%
 
 try{

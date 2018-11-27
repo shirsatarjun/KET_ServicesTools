@@ -15,7 +15,7 @@
 </td></tr>
 <tr><td height="300" valign="top">
 <ul>
-<li>This is List of all Reported ticktes assigned to you. 
+<li>This is List of all Reported ticktes assigned you 
 
 <table align="center" cellpadding="2" width="100%">
 <tr bgcolor="#0054A8" class="whitetext" align="center" >
@@ -29,8 +29,8 @@
 </tr>
 <%
 try{
-	Class.forName("oracle.jdbc.driver.OracleDriver");
-	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","bug","bug");
+	Class.forName("com.mysql.jdbc.Driver");
+	Connection con = DriverManager.getConnection("jdbc:mysql://localhost/mydb","root","root");
 	Statement stmt = con.createStatement();
 	String query = "select * from bug where assign_to='"+(String)session.getAttribute("loginid")+"'";
 	ResultSet rs = stmt.executeQuery(query);
@@ -56,7 +56,7 @@ try{
 	out.println("</tr>");		
 	}
 	out.println("</table>");
-	out.print("<div align=left> Total Bugs: "+(i-2)+"</div>");
+	out.print("<div align=left> Total  Tickets ID: "+(i-2)+"</div>");
 }catch(Exception e){
 	System.out.print(e);
 }  

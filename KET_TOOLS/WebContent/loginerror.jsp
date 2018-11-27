@@ -15,7 +15,7 @@
 </td></tr>
 <tr><td height="300" align="center" valign="top"><p>&nbsp;</p>
 <div align="center">
-<div class="errortext">You are not authrized to view this page.</div><br/> 
+<div class="errortext"><h4><font color="red">You are not authrized .</h4></div><br/> 
  <br /> Re-Login after <a href="logout.jsp">Logout</a></div>
 <p><img src="images/ket.png" width="134" height="74" /></p></td></tr>
 <tr><td ><div align="center" class="greysmall"><hr />

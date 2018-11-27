@@ -26,6 +26,14 @@
       <tr>
         <td bgcolor="#F2F2F2" height="25" align="center"><a href="reportbug.jsp">Report A New Ticket Issue</a></td>
       </tr>
+      
+      
+      <tr>
+        <td bgcolor="#F2F2F2" height="25" align="center"><a href="TicketGen.jsp"> New Ticket Issue for KET Clients L1 L2 L3 L4</a></td>
+      </tr>
+      
+      
+      
       <tr>
         <td bgcolor="#F2F2F2" height="25" align="center"><a href="viewbugs.jsp">View Status</a></td>
       </tr>

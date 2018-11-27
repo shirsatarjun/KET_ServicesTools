@@ -24,6 +24,7 @@ else{
 <link href="mystyle.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
 <table align="center" width="1200" bgcolor="#FFFFFF">
 <tr><td height="70">&nbsp;</td></tr>
 <tr><td height="70"><jsp:include page="header.jsp"/></td></tr>
@@ -38,17 +39,17 @@ else{
 	<%
 	if("Admin".equals((String)request.getParameter("type"))){
 	out.println("<tr><td bgcolor=#FFE4B5 height=40> Administrator can Sign in </td></tr>");
-	out.println("<tr><td><p align=justify>An Administrator can assign various reported tickets to Technical Experts </td></tr>");
+	out.println("<tr><td><p align=justify> </td></tr>");
 	out.println("<tr><td bgcolor=#FFE4B5 height=40>&nbsp;</td></tr>");
 	}
 	else if("Expert".equals((String)request.getParameter("type"))){
 	out.println("<tr><td bgcolor=#FFE4B5 height=40>Technical Expert can Sign in</td></tr>");
-	out.println("<tr><td><p align=justify>A Technical Expert can give comments.</td></tr>");
+	out.println("<tr><td><p align=justify></td></tr>");
 	out.println("<tr><td bgcolor=#FFE4B5 height=40>&nbsp;</td></tr>");
 	}
 	else if("User".equals((String)request.getParameter("type"))){
 	out.println("<tr><td bgcolor=#FFE4B5 height=40> Reportings ticketing Sign </td></tr>");
-	out.println("<tr><td><p align=justify>Normal User can sign in for Reporting  to the Sofware  Team.</td></tr>");
+	out.println("<tr><td><p align=justify></td></tr>");
 	out.println("<tr><td bgcolor=#FFE4B5 height=40>New User Please <a href=signup.jsp>Signup</a></td></tr>");
 	}	
 	%>
@@ -96,6 +97,7 @@ else{
 <tr><td ><div align="center" class="greysmall"><hr />
 ket infotech Pvt. Ltd.</div></td></tr>
 </table>
+
 </body>
 </html>
 <%}%>

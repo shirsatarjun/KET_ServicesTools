@@ -16,7 +16,7 @@
 <tr><td height="300" valign="top"><br />
 <table align="center" cellpadding="2" width="100%">
 <tr bgcolor="#0054A8" class="whitetext" align="center" >
-<td>Bug ID</td>
+<td>Tickets ID</td>
 <td>Product</td>
 <td>Env.</td>
 <td>Type</td>
@@ -53,7 +53,7 @@ try{
 	out.println("</tr>");		
 	}
 	out.println("</table>");
-	out.print("<div align=left> Total Bugs: "+(i-2)+"</div>");
+	out.print("<div align=lefts> <b>Total Teckets Generate by KET Clients</b>: "+(i-2)+"</div>");
 }catch(Exception e){
 	System.out.print(e);
 }  

@@ -26,7 +26,7 @@ try{
 	String query = "select * from bug where bugid="+(String)request.getParameter("bugid");
 	ResultSet rs = stmt.executeQuery(query);
 	while(rs.next()){
-	out.print("<tr><td bgcolor=#F2F2F2>Bug ID</td><td>"+rs.getString("bugid")+"</td><td bgcolor=#F2F2F2>Author</td><td>"+rs.getString("author")+"</td></tr>");
+	out.print("<tr><td bgcolor=#F2F2F2>Teckets ID</td><td>"+rs.getString("bugid")+"</td><td bgcolor=#F2F2F2>Author</td><td>"+rs.getString("author")+"</td></tr>");
 	out.print("<tr><td bgcolor=#F2F2F2>Product Name</td><td colspan=3>"+rs.getString("prodname")+"</td></tr>");
 	out.print("<tr><td bgcolor=#F2F2F2>Environment</td><td>"+rs.getString("env")+"</td><td bgcolor=#F2F2F2>Type</td><td>"+rs.getString("type")+"</td></tr>");
 	out.print("<tr><td colspan=4 bgcolor=#F2F2F2>Description</td></tr>");	

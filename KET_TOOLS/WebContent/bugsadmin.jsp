@@ -61,7 +61,7 @@ try{
 	}
 	
 	out.println("</table>");
-	out.print("<div align=left> Total Bugs: "+(i-2)+"</div>");
+	out.print("<div align=left> Total Tickets Generate by KET CLIENT : "+(i-2)+"</div>");
 }catch(Exception e){
 	System.out.print(e);
 }  
